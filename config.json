@@ -1,6 +1,9 @@
 {
-  "defaultHomeserver": 3,
+  "defaultHomeserver": 0,
   "homeserverList": [
+    "matrix.piratenpartei.de",
+    "pirateriot.net",
+    "matrix.tchncs.de",
     "converser.eu",
     "envs.net",
     "halogen.city",

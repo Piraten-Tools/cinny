@@ -7,7 +7,7 @@
   --bg-surface-transparent: #FFFFFF00;
   --bg-surface-low: #F6F6F6;
   --bg-surface-low-transparent: #F6F6F600;
-  --bg-surface-extra-low: #F6F6F6;
+  --bg-surface-extra-low: #FF8800;
   --bg-surface-extra-low-transparent: #F6F6F600;
   --bg-surface-hover: rgba(0, 0, 0, 3%);
   --bg-surface-active: rgba(0, 0, 0, 5%);
@@ -40,7 +40,7 @@
   --bg-divider: hsla(0, 0%, 0%, .1);
 
   /* text color | --tc-[background type]-[priority]: value */
-  --tc-surface-high: #000000;
+  --tc-surface-high: #FF8800;
   --tc-surface-normal: rgba(0, 0, 0, 78%);
   --tc-surface-normal-low: rgba(0, 0, 0, 60%);
   --tc-surface-low: rgba(0, 0, 0, 48%);
@@ -62,9 +62,9 @@
   --tc-danger-low: rgba(240, 71, 71, 60%);
 
   --tc-code: #e62498;
-  --tc-link: hsl(213deg 76% 56%);
+  --tc-link: #652480;
   --tc-tooltip: white;
-  --tc-badge: white;
+  --tc-badge: #FF8800;
 
 
   /* system icons | --ic-[background type]-[priority]: value */
@@ -209,18 +209,18 @@
 
 @mixin dark-mode() {
   /* background color | --bg-[background type]: value */
-  --bg-surface: hsl(208, 8%, 20%);
+  --bg-surface: #1F1F1F;
   --bg-surface-transparent: hsla(208, 8%, 20%, 0);
-  --bg-surface-low: hsl(208, 8%, 16%);
+  --bg-surface-low: #272828;
   --bg-surface-low-transparent: hsla(208, 8%, 16%, 0);
-  --bg-surface-extra-low: hsl(208, 8%, 14%);
+  --bg-surface-extra-low: #652480;
   --bg-surface-extra-low-transparent: hsla(208, 8%, 14%, 0);
   --bg-surface-hover: rgba(255, 255, 255, 3%);
   --bg-surface-active: rgba(255, 255, 255, 5%);
   --bg-surface-border: rgba(0, 0, 0, 20%);
 
-  --bg-primary: rgb(42, 98, 166);
-  --bg-primary-hover: rgba(42, 98, 166, 80%);
+  --bg-primary: #652480;
+  --bg-primary-hover: #450460;
   --bg-primary-active: rgba(42, 98, 166, 70%);
   --bg-primary-border: rgba(42, 98, 166, 38%);
 
@@ -232,18 +232,18 @@
 
 
   /* text color | --tc-[background type]-[priority]: value */
-  --tc-surface-high: rgba(255, 255, 255, 98%);
-  --tc-surface-normal: rgba(255, 255, 255, 94%);
-  --tc-surface-normal-low: rgba(255, 255, 255, 60%);
-  --tc-surface-low: rgba(255, 255, 255, 58%);
+  --tc-surface-high: #FF8800;
+  --tc-surface-normal: #D3D8D8;
+  --tc-surface-normal-low: #C3C8C8;
+  --tc-surface-low: #FFF;
   
-  --tc-primary-high: #ffffff;
+  --tc-primary-high: #FF8800;
   --tc-primary-normal: rgba(255, 255, 255, 0.68);
   --tc-primary-low: rgba(255, 255, 255, 0.4);
 
   --tc-code: #e565b1;
-  --tc-link: hsl(213deg 94% 73%);
-  --tc-badge: black;
+  --tc-link: #FF8800;
+  --tc-badge: #652480;
 
   /* system icons | --ic-[background type]-[priority]: value */
   --ic-surface-high: rgb(255, 255, 255);
@@ -484,4 +484,19 @@ audio:not([controls]) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sidebar {
+    padding-top: 31px;
+}
+.toolsmenu-trigger.toggle-left {
+    margin-left: 10px;
+}
+.snap-drawers > .snap-drawer > .toolsmenu-topbar > img {
+    left: 47px;
+}
+.ic-btn.ic-btn-surface.room-header__back-btn {
+    width: 35px;
+    margin-left: 35px;
+    margin-right: calc(var(--sp-tight)/2);
 }
